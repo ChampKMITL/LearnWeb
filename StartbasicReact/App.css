@@ -1,0 +1,167 @@
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 18px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 450px;
+    padding-right: 450px;
+    color: black;
+    background-color: rgb(140, 151, 147);
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    color: #f5e028;
+    font-size: 45px;
+}
+.block__1 {
+    display: flex;
+    justify-content: center;
+    border: 4px solid ;
+    border-radius: 20px;
+    background-color: rgb(247, 217, 178);
+    padding: 30px;
+    margin: auto;
+    font-size: 20px;
+}
+
+img {
+    padding-left: 10px;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.block__1 #countId {
+
+    display: flex;
+    justify-content: center;
+}
+
+.block__1 #countId #countShow{
+    margin: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 30px;
+    border: solid #9017a8;
+    color: #c01ee0;
+    border-radius: 15px;
+    background-color:rgb(54, 241, 47);
+}
+
+.block__1 .counter #button{
+    margin: 15px;
+    padding: 5px;
+    border: solid #8d8686;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(215, 240, 223);
+    font-size: 18px;
+}
+.block__1 .counter #button:hover{
+    color: #5f0c5b;
+    background-color: rgb(187, 226, 15);
+    border: solid #3f3a3a;
+}
+
+/*----------------------------------------------- block2--------------------------------------- */
+.block__2 {
+    display: flex;
+    justify-content: center;
+    border: 4px solid ;
+    border-radius: 20px;
+    background-color: rgb(247, 217, 178);
+    padding: 30px;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+.block__2 #countId {
+    display: flex;
+    justify-content: center;
+}
+
+.block__2 #countId #countShow{
+    margin: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 30px;
+    border: solid #9017a8;
+    color: #c01ee0;
+    border-radius: 15px;
+    background-color:rgb(54, 241, 47);
+}
+
+.block__2 .counter #button{
+    margin: 15px;
+    padding: 5px;
+    border: solid #8d8686;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(215, 240, 223);
+    font-size: 18px;
+}
+.block__2 .counter #button:hover{
+    color: #ddd4dd;
+    background-color: rgb(189, 84, 133);
+    border: solid #ebdada;
+}
+
+/*----------------------------------------------- block3 --------------------------------------- */
+.block__3 {
+    display: flex;
+    justify-content: center;
+    border: 4px solid ;
+    border-radius: 20px;
+    background-color: rgb(247, 217, 178);
+    padding: 30px;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+.block__3 #countId {
+    display: flex;
+    justify-content: center;
+}
+
+.block__3 #countId #countShow{
+    margin: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: 30px;
+    border: solid #9017a8;
+    color: #c01ee0;
+    border-radius: 15px;
+    background-color:rgb(54, 241, 47);
+}
+
+.block__3 .counter #button{
+    margin: 15px;
+    padding: 5px;
+    border: solid #8d8686;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: rgb(215, 240, 223);
+    font-size: 18px;
+}
+.block__3 .counter #button:hover{
+    color: #1d1d1d;
+    background-color: rgb(91, 179, 214);
+    border: solid #413d3d;
+}
