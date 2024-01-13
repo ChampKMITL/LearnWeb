@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue page</title>
+  <style>
+    #app {
+      display: inline-block;
+      padding: 15px;
+      font-size: x-large;
+      background-color: rgb(41, 156, 177);
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+<h1>Vue Example</h1>
+
+<p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id="app".</p>
+
+<div id="app">
+  {{ message }}
+  <h3>{{ message2 }}</h3>
+  <button v-on:click="showAlert">Click moose</button><br>
+  <h3>{{ message3 }}</h3>
+  <button v-on:click="showAlert2">Click moose2</button>
+</div>
+
+<script>
+  const app = Vue.createApp({
+    data(){
+      return {
+        message:"MessageTest1",
+        message2:"showAlert1",
+        message3:"showAlert2"
+      }
+    },
+    methods: {
+      showAlert() {
+        alert('Button clicked showAlert!');
+      },
+      showAlert2() {
+        Swal.fire({
+          title: "Good job!",
+          text: "You clicked the button! Test",
+          icon: "success",
+          timer: 1500
+        });
+      }
+    }
+  });
+  
+  app.mount('#app')
+  
+</script>
+
+</body>
+</html>
