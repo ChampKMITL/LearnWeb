@@ -1,0 +1,27 @@
+
+int number[] = {0xfc, 0x60, 0xda, 0xf2, 0x66, 0xb6, 0xbe, 0xe0, 0xff, 0xf6};
+int count1,count2 = 0;
+
+void setup()
+{
+  DDRD = 0x3c;
+}
+
+void loop()
+{
+  if (PIND & 0x20){
+    showCounter(number[count1],number[count2]);
+    count1 = (count1 + 1) % 10;
+	count2 = (count1 == 0) ? (count2 + 1) % 10 : count2;
+    _delay_ms(500);
+  }
+}
+
+void showCounter(int digit1, int digit2)
+{
+  PORTD=0x00;
+  shiftOut(0x02, 0x03, LSBFIRST, digit1);
+  shiftOut(0x02, 0x03, LSBFIRST, digit2);
+  PORTD=0x10;
+}
+                
